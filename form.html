@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form method="get">
+    <div>
+        <fieldset>
+            <legend>
+                Personal Information
+            </legend>
+            <label for="name">First Name:</label>
+            <input id="name" type="text" minlength="3"> <br>
+            <label for="last">Lasts Name:</label>
+            <input id="last" type="text" minlength="3"> <br>
+            <label for="age">Age:</label>
+            <input id="age" type="number" max="100" min="0"> <br>
+            <label for="gender">Gender:</label>
+            <select id="gender" >
+                <option> Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select> 
+
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input id="email" type="email" required > <br>
+            <label for="pas">Lasts Name:</label>
+            <input id="pas" type="password" required > <br>
+            <label for="con">Country:</label>
+            <select id="con" name="con" >
+                <optgroup label="Europe">
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Italy">Italy</option>
+                  </optgroup>
+                  <optgroup label="Asia">
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                  </optgroup>
+                  <optgroup label="Other">
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="United Kingdom">United KOngdom</option>
+                  </optgroup>
+            </select> 
+
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Address Information</legend>
+            <label for="add">Address:</label>
+            <input id="add" type="text" required > <br>
+            <label for="city">City:</label>
+            <input id="city" type="text"required > <br>
+            <label for="code">Postal Code: </label>
+            <input id="code" type="text" required > <br>
+            <label for="ph">Phone Number:</label>
+            <input id="ph" type="tel">
+
+        </fieldset>
+
+    </div>
+    <div>
+        <label for="com">Additional Comments:</label> <br>
+        <textarea></textarea>
+    </div>
+    <div>
+        <input id="sub" type="checkbox">
+        <label>Subscribe to our newsletter</label>
+    </div>
+    <div>
+        <input type="submit" value="register">
+    </div>
+    </form>
+    
+</body>
+</html>
